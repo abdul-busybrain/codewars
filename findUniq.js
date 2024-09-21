@@ -44,9 +44,10 @@ function findUniq(arr) {
   // Sort the array in ascending order
   // This puts the unique element either at the beginning or at the end
   arr.sort((a, b) => a - b);
+  console.log(arr);
 
   // Check if the first element is unique
-  //   If it's different from the second element, must ne the unique one
+  //   If it's different from the second element, must be the unique one
   if (arr[0] !== arr[1]) {
     return arr[0];
   }
