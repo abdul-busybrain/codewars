@@ -12,6 +12,15 @@ For the given example, the return value should be:
 ArraysFundamentals
 */
 
+/**
+ * NOTE: Documentation
+ * Generates a NxN multiplication table.
+ *
+ * @param {number} size - The size of the multiplication table (N)
+ * @returns {number[][]} A 2D array representing the multiplication table.
+ * @throws {Error} If size is not a positive integer
+ */
+
 function multiplicationTable(size) {
   // Input validation
   if (!Number.isInteger(size) || size <= 0) {
@@ -33,3 +42,24 @@ function multiplicationTable(size) {
 // Test cases
 console.log("3x3 Table");
 console.log(multiplicationTable(3));
+
+console.log("\n5x5 Table");
+console.log(multiplicationTable(5));
+
+console.log("\n1x1 Table");
+console.log(multiplicationTable(1));
+
+// Edge cases: 0 should throw an error
+try {
+  console.log("\nTrying to create a 0x0 table:");
+  multiplicationTable(0);
+} catch (error) {
+  console.log("Error caught:", error.message);
+}
+
+// Edge case: negative number should throw an error
+try {
+  console.log("\nTrying to create a -3x-3 table:");
+} catch (error) {
+  console.log("Error caught:", error.message);
+}
