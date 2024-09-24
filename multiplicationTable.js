@@ -33,7 +33,7 @@ function multiplicationTable(size) {
     Array.from(
       { length: size },
       (_, j) =>
-        // Inner array: each row with 'size' number pf columns
+        // Inner array: each row with 'size' number of columns
         (i + 1) * (j + 1) //Calculate the product for each cell
     )
   );
