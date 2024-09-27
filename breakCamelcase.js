@@ -3,6 +3,19 @@
  *Complete the solution so that the function will break up camel casing, using a space between words.
  */
 
+/**
+ * Inserts spaces before capital letters that are preceded by lowercase letters in a string.
+ * This function is useful to converting camelCase or PascalCase strings to a readable format.
+ *
+ * @param {string} string - Thee input string to be processed.
+ * @returns {string} The processed string with spaces inserted before capital letters.
+ *
+ * @example
+ * solution("camelCase") // returns "camel Case"
+ * solution("identifierIsCamelCase") // returns "identifier Is Camel Case"
+ * solution("ThisIsAPascalCaseString") // returns "This Is A Pascal Case String"
+ */
+
 function breakCamelcase(string) {
   // Input validation
   if (typeof string !== "string") {
