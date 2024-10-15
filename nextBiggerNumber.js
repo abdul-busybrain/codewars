@@ -3,6 +3,21 @@
  * Create a javascript function that takes a positive integer and returns the next bigger number that can be formed by rearranging its digits.
  */
 
+/**
+ * Finds the next bigger number that can be formed by rearranging the digits of the input number.
+ *
+ * @param {number}  n - The input number to process.
+ * @returns  {number} The next bigger number, or -1 if no bigger number can be formed.
+ *
+ * @example
+ * nextBigger(12) // returns 21
+ * nextBigger(513) // returns 531
+ * nextBigger(2017) // returns 2071
+ * nextBigger(9) // returns -1
+ * nextBigger(111) // returns -1
+ * nextBigger(531) // returns -1
+ */
+
 function nextBigger(n) {
   // Convert the numbers to an array of digits for easier manipulation
   const digits = Array.from(String(n), Number);
