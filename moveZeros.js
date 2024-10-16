@@ -3,6 +3,13 @@
  * Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.
  */
 
+/**
+ *  Moves all zeros to the end  of an array while preserving the order of non-zero elements
+ *
+ * @param {Array} arr - The input array
+ * @returns {Array} The array with zeros moved to the end
+ */
+
 function moveZeros(arr) {
   // Create an empty array to store non-zero elements
   const nonZeroElements = [];
