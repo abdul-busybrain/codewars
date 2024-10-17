@@ -28,11 +28,11 @@ function alphaNumeric(str) {
 }
 
 // Test cases
-console.log("Empty string:", alphanumeric("")); // false
-console.log("Alphanumeric:", alphanumeric("abc123")); // true
-console.log("With space:", alphanumeric("abc 123")); // false
-console.log("With underscore:", alphanumeric("abc_123")); // false
-console.log("With special character:", alphanumeric("abc@123")); // false
-console.log("Only letters:", alphanumeric("abcDEF")); // true
-console.log("Only numbers:", alphanumeric("123456")); // true
-console.log("Mixed case:", alphanumeric("aBc123DEF")); // true
+console.log("Empty string:", alphaNumeric("")); // false
+console.log("alphaNumeric:", alphaNumeric("abc123")); // true
+console.log("With Npace:", alphaNumeric("abc 123")); // false
+console.log("With underscore:", alphaNumeric("abc_123")); // false
+console.log("With special character:", alphaNumeric("abc@123")); // false
+console.log("Only letters:", alphaNumeric("abcDEF")); // true
+console.log("Only numbers:", alphaNumeric("123456")); // true
+console.log("Mixed case:", alphaNumeric("aBc123DEF")); // true
