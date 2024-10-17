@@ -10,6 +10,16 @@ The string has the following conditions to be alphanumeric:
 NOTE: TOPIC Regular Expressions Strings
  */
 
+/**
+ * @description Validates if a given string is Alphanumeric.
+ * An alphaNumeric string must the following criteria.
+ * 1. Contains at least one character (non-empty)
+ * 2. Contains only uppercase letters, lowercase letters, and digits (0-9)
+ * 3. Does not contain whitespaces or underscores.
+ *
+ * @param {string} str - The input string to be validated
+ * @returns {boolean} True if the string is alphaNumeric, false otherwise.
+ */
 function alphaNumeric(str) {
   // Check if the string is not empty
   // This is necessary because an empty string would pass the regex test, -
