@@ -5,6 +5,14 @@
 Write a javascript function breads(), which takes the recipe (object) and the available ingredients (also an object) and returns the maximum number of breads Haji can bake (integer). For simplicity there are no units for the amounts (e.g. 1 lb of flour or 200 g of sugar are simply 1 or 200). Ingredients that are not present in the objects, can be considered as 0.
  */
 
+/**
+ * @description Calculates the maximum number of breads that can be baked given  a recipe and available ingredients.
+ *
+ * @param {Object} recipe - An object representing the recipe, where keys are ingredients and values are required amounts
+ * @param {Object} available - An object representing available ingredients, where keys are ingredients and values are available amounts.
+ * @returns  {number} The maximum number of breads that can be baked.
+ */
+
 function breads(recipe, available) {
   let maxBreads = Infinity;
 
@@ -35,7 +43,7 @@ console.log(
 
 console.log(
   breads(
-    { apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100 },
+    { coconut: 3, flour: 300, sugar: 150, milk: 100, oil: 100 },
     { sugar: 500, flour: 2000, milk: 2000 }
   )
 ); // Expected output: 0
