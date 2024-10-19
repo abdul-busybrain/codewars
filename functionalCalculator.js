@@ -17,6 +17,20 @@ eight(dividedBy(three()));
 NOTE: TOPIC Functional Programming
  */
 
+/**
+ * Funtional Calculator
+ * This module implements a funtional-style calculator that allows for -
+ * chained operations on numbers from 0 - 9. It demonstrated -
+ * the use of-
+ * higher-order functions and closures in JavaScript
+ */
+
+/**
+ * @description - Creates a functions that represents a number in our calculator.
+ *
+ * @param {number} number - The number to be represented (0-9)
+ * @returns {Function} A function that either returns the number or applies an operation to it.
+ */
 const createNumber = (number) => (operation) =>
   operation ? operation(number) : number;
 
@@ -33,12 +47,18 @@ const seven = createNumber(7);
 const eight = createNumber(8);
 const nine = createNumber(9);
 
+/**
+ * @description - Creates a function for mathematical operation
+ *
+ * @param {Function} operation - A binary function representing the mathematical operation.
+ * @returns {Function} A hiher-order function that takes two numbers and applies the operation
+ */
+const createOperation = (operation) => (y) => (x) => operation(x, y);
+
 // Operations functions
 // These functions represent the four basic arithmetic operations
 // Note: The order parameters in the inner functions (x,y) is important,
 // as it affects the order of operations in subtraction and division
-const createOperation = (operation) => (y) => (x) => operation(x, y);
-
 const plus = createOperation((x, y) => x + y);
 const minus = createOperation((x, y) => x - y);
 const times = createOperation((x, y) => x * y);
