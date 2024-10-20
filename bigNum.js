@@ -19,6 +19,14 @@ The numbers are positives
 NOTE: Topic Mathematics Big Integers Algorithms
  */
 
+/**
+ * @description - Adds two large numbers represented as strings
+ *
+ * @param {string} num1 - The first number as a string
+ * @param {string} num2 - The second number as a string
+ * @returns {string} The sum of the numbers as a string
+ */
+
 function bigNum(num1, num2) {
   // Initialize variables to score result, carryover, and current indices
   let result = "";
