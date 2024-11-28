@@ -24,6 +24,11 @@ Make sure you decode the URI components correctly
 NOTE: TOPIC: ALGORITHMS
  */
 
+/**
+ * NOTE: JSDoc Converts a URL query string into a nested object.
+ * @param {string} query - The URL query string to convert.
+ * @returns {Object} The resulting nested object.
+ */
 function convertQueryToMap(query) {
   // Step 1: Handle empty input
   // If the query is falsy (empty string, null, undefinde), return an empty object
