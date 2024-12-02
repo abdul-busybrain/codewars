@@ -20,6 +20,11 @@ The function you write for this challenge is the inverse of this kata: "Next big
 NOTE: TOPIC StringsMathematicsAlgorithms
  */
 
+/**
+ * NOTE: JSDoc Finds the next smaller number with the same number of digits by rearranging the digits.
+ * @param {*} n - The input number to find the next smaller permutation
+ * @returns {number} The next smaller number or -1 if no such number exists
+ */
 function nextSmaller(n) {
   // Step 1: Convert the number to an array of digits for manipulation
   // This allows us to work with individual digits easily
