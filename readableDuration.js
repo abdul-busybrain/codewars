@@ -83,4 +83,9 @@ function formatDuration(seconds) {
 }
 
 // Step 8: Demonstrate usage with test cases
+console.log(formatDuration(0));
+console.log(formatDuration(1));
 console.log(formatDuration(62));
+console.log(formatDuration(120));
+console.log(formatDuration(3662));
+console.log(formatDuration(15731080));
