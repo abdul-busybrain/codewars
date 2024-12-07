@@ -43,5 +43,6 @@ function sudoku(puzzle) {
         }
       }
     }
+    return null; // Puzzle is complete when no empty cells exist
   }
 }
