@@ -12,6 +12,13 @@ NOTE: TOPICS
 Mathematics, Fundamentals
  */
 
+/**
+ * NOTE: JSDoc
+ * Squares each digit of a given number and concatenates the squared digits.
+ *
+ * @param {number} num - The input number whose digits will be squared
+ * @returns {number} A new number where each digit is squared and concatenated
+ */
 function squareDigits(num) {
   // Step 1: Convert the number to a string
   // This allows us to easily split and manipulate individual digits
