@@ -1,6 +1,3 @@
-function century(year) {
-  // Finish this :)
-  const century = Math.ceil(year / 100);
-
-  return century;
+function solution(str) {
+  return str.split("").reverse().join("");
 }
