@@ -9,7 +9,7 @@ arrayDiff([1,2,2,2,3],[2]) == [1,3]
  */
 
 /**
- * NOTE Documentation: Computes the difference between two arrays
+ * NOTE JSDoc: Computes the difference between two arrays
  *
  * @param {Array} a - The array to be filtered
  * @param {Array} b - The array containing elements to be removed from 'a'
