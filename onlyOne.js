@@ -9,3 +9,6 @@ Return true if the array contains the value, false if not.
 NOTE TOPICS
 Fundamentals Strings Arrays 
  */
+function check(a, x) {
+  return a.includes(x);
+}
